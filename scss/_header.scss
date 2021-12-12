@@ -1,0 +1,85 @@
+.header {
+    background-image: url(../images/the-town-bg-01.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .row {
+        flex-direction: row;
+    }
+
+
+    .logo {
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            color: #3496d8;
+            transition: .2s ease-in-out;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        &__item {
+            list-style: none;
+
+            &:not(:last-child) {
+                margin-right: 4rem;
+            }
+        }
+
+        &__link {
+            font-size: 2.2rem;
+
+            &:hover {
+                color: #3496d8;
+                transition: .2s ease-in-out;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+        font-size: 2.2rem;
+        color: white;
+    }
+
+    &__content {
+        text-align: center;
+        position: relative;
+        top: 20%;
+
+        h1 {
+            font-size: 6rem;
+            margin: 0 0;
+            color: white;
+        }
+        p {
+            font-size: 2rem;
+            color: white;
+            line-height: 1.8;
+            margin: 0 0;
+        }
+        i {
+            margin-top: 12rem;
+            color: #c57e7d;
+            font-size: 4rem;
+            background-color: white;
+            padding: 1.6rem 0;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s ease;
+
+            &:hover {
+                color: white;
+                background-color: #3496d8;
+            }
+        }
+    }
+}

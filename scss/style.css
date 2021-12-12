@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-primary: #3496d8;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 1.6rem 0;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.header {
+  background-image: url(../images/the-town-bg-01.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .logo {
+  color: white;
+  cursor: pointer;
+}
+
+.header .logo:hover {
+  color: #3496d8;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu__item {
+  list-style: none;
+}
+
+.header .menu__item:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.header .menu__link {
+  font-size: 2.2rem;
+}
+
+.header .menu__link:hover {
+  color: #3496d8;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.header .burger {
+  display: none;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.header__content {
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+.header__content h1 {
+  font-size: 6rem;
+  margin: 0 0;
+  color: white;
+}
+
+.header__content p {
+  font-size: 2rem;
+  color: white;
+  line-height: 1.8;
+  margin: 0 0;
+}
+
+.header__content i {
+  margin-top: 12rem;
+  color: #c57e7d;
+  font-size: 4rem;
+  background-color: white;
+  padding: 1.6rem 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header__content i:hover {
+  color: white;
+  background-color: #3496d8;
+}
+
+@media (max-width: 1024px) {
+  .img4,
+  .img5 {
+    display: none;
+  }
+  .work__content p {
+    width: 80% !important;
+  }
+  .contact__information .row {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none !important;
+  }
+  .burger {
+    display: block !important;
+  }
+  .work .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90%;
+  }
+  .work__gallery img {
+    -ms-flex-preferred-size: 2%;
+        flex-basis: 2%;
+  }
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .row {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .img2,
+  .img3,
+  .img4,
+  .img5 {
+    display: none;
+  }
+  .work .row {
+    width: 50%;
+  }
+  .contact__information .row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .info1 {
+    margin-bottom: 5rem;
+  }
+  .info2 input {
+    margin-bottom: 2rem;
+  }
+}
+
+.introduction__img {
+  margin-right: 6rem;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.introduction__img img {
+  width: 100%;
+}
+
+.introduction__content {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.introduction__content h1 {
+  color: var(--color-primary);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.introduction__content p {
+  color: #949393;
+  margin-bottom: 3rem;
+}
+
+.introduction__content .btn {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 14px 20px;
+  border-radius: 30px;
+}
+
+.introduction__btn {
+  line-height: 5;
+}
+
+.introduction .threeColumn {
+  margin-top: 10rem;
+}
+
+.introduction .threeColumn .column {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  text-align: center;
+}
+
+.introduction .threeColumn .column i {
+  color: var(--color-primary);
+  font-size: 6rem;
+}
+
+.introduction .threeColumn .column h2 {
+  color: var(--color-primary);
+  margin: 3rem 0;
+}
+
+.introduction .threeColumn .column p {
+  color: #949393;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.work {
+  padding: 50px 0;
+}
+
+.work__content {
+  text-align: center;
+}
+
+.work__content h1 {
+  color: var(--color-primary);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.work__content p {
+  width: 50%;
+  margin: 0 auto;
+  color: #949393;
+}
+
+.work__gallery {
+  margin-top: 8rem;
+}
+
+.work__gallery img {
+  -ms-flex-preferred-size: 18%;
+      flex-basis: 18%;
+  cursor: pointer;
+}
+
+.work__gallery .dots {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.work__gallery .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+
+.work__gallery .dot:hover {
+  background-color: var(--color-primary);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.work__gallery .dot:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.contact {
+  background-image: url(../images/the-town-bg-02.jpg);
+  min-height: 850px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 50px 0 0 0;
+}
+
+.contact__content .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__content h1 {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.contact__content .underline {
+  height: 1px;
+  background-color: white;
+  width: 96%;
+}
+
+.contact__content .underline .underline__inner {
+  width: 20%;
+  height: 8px;
+  background-color: white;
+}
+
+.contact__content p {
+  color: white;
+  margin-top: 6rem;
+}
+
+.contact__information {
+  margin-top: 8rem;
+}
+
+.contact__information .row {
+  width: 60%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact__information .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__information .info:hover {
+  color: var(--color-primary);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.contact__information .info__icon {
+  font-size: 6rem;
+  margin-right: 3rem;
+}
+
+.contact__information .info__content {
+  font-size: 1.5rem;
+}
+
+.contact__information .lower__info {
+  margin-top: 8rem;
+}
+
+.contact__information .lower__info .info2 input {
+  padding: 14px 25px;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 1.6rem;
+  width: 30rem;
+  margin-right: 1rem;
+}
+
+.contact__information .lower__info .info2 input::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact__information .lower__info .info2 input:-ms-input-placeholder {
+  color: white;
+}
+
+.contact__information .lower__info .info2 input::-ms-input-placeholder {
+  color: white;
+}
+
+.contact__information .lower__info .info2 input::placeholder {
+  color: white;
+}
+
+.contact__information .lower__info .info2 button {
+  font-size: 1.8rem;
+  padding: 14px 20px;
+  border-radius: 4px;
+  border: 0;
+  background-color: white;
+  color: black;
+}
+
+.contact .footer {
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.contact .footer p {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

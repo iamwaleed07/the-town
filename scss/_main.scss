@@ -1,0 +1,207 @@
+.introduction {
+    &__img {
+        margin-right: 6rem;
+        flex-basis: 50%;
+
+        img {
+            width: 100%;
+        }
+    }  
+    &__content {
+        flex-basis: 50%;
+
+        h1 {
+            color: var(--color-primary);
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        p {
+            color: rgb(148, 147, 147);
+            margin-bottom: 3rem;
+        }
+        .btn {
+            color: white;
+            background-color: var(--color-primary);
+            padding: 14px 20px;
+            border-radius: 30px;
+        }
+    }
+    &__btn {
+        line-height: 5;
+    }
+
+    .threeColumn {
+        margin-top: 10rem;
+
+        .column {
+            flex-basis: 30%;
+            text-align: center;
+
+            i {
+                color: var(--color-primary);
+                font-size: 6rem;
+            }
+            h2 {
+                color: var(--color-primary);
+                margin: 3rem 0;
+            }
+            p {
+                color: #949393;
+                text-align: left;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+.work {
+    padding: 50px 0;
+
+    &__content {
+        text-align: center;
+
+        h1 {
+            color: var(--color-primary);
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        p {
+            width: 50%;
+            margin: 0 auto;
+            color: #949393;
+        }
+    }
+    &__gallery {
+        margin-top: 8rem;
+
+        img {
+            flex-basis: 18%;
+            cursor: pointer;
+        }
+        .dots {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+        .dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #6c757d;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-primary);
+                transition: .2s ease;
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.contact {
+    background-image: url(../images/the-town-bg-02.jpg);
+    min-height: 850px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 50px 0 0 0;
+
+    &__content {
+        .row {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        h1 {
+            color: white;
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        .underline {
+            height: 1px;
+            background-color: white;
+            width: 96%;
+
+            .underline__inner {
+                width: 20%;
+                height: 8px;
+                background-color: white;
+            }
+        }
+        p {
+            color: white;
+            margin-top: 6rem;
+        }
+    }
+
+    &__information {
+        margin-top: 8rem;
+
+        .row {
+            width: 60%;
+            flex-direction: row;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: var(--color-primary);
+                transition: .3s ease;
+            }
+
+            &__icon {
+                font-size: 6rem;
+                margin-right: 3rem;
+            }
+            &__content {
+                font-size: 1.5rem;
+            }
+        }
+
+        .lower__info {
+            margin-top: 8rem;
+
+            .info2 {
+                input {
+                    padding: 14px 25px;
+                    border-radius: 3px;
+                    border: 1px solid white;
+                    background: transparent;
+                    color: white;
+                    outline: none;
+                    font-size: 1.6rem;
+                    width: 30rem;
+                    margin-right: 1rem;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+
+                button {
+                    font-size: 1.8rem;
+                    padding: 14px 20px;
+                    border-radius: 4px;
+                    border: 0;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20rem;
+
+        p {
+            color: white;
+        }
+    }
+}
